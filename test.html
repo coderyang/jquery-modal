@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test jquery popup plugins</title>
+	<link rel="stylesheet" href="css/jquery-modal.css">
+	<style>
+	html, body {
+		height: 120%;
+	}
+	</style>
+</head>
+<body>
+	<a id="popup-btn" href="#" tabIndex="0" data-target="#modal">popup</a>
+
+	<div id="modal" class="modal">
+		<div class="modal-content">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum accusamus rem esse incidunt velit dolor tempore ipsa consequuntur quia in.
+		</div>
+		<button class="modal-close">&times;</button>
+	</div>
+
+	<script src="jquery.min.js"></script>
+	<script src="jquery-modal.js"></script>
+	<script>
+	$(function(){
+		$("#popup-btn").modal();
+	});
+	</script>
+</body>
+</html>
